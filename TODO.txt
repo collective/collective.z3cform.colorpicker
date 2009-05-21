@@ -1,0 +1,8 @@
+=====
+TODOS
+=====
+
+- Internationalization
+- Make output valid xhtml
+- Close popup when click on page body
+

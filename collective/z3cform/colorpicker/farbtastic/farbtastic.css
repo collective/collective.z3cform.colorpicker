@@ -1,0 +1,53 @@
+.color {
+ background-image: none;
+}
+.color-popup {
+    display: none;
+    position: absolute !important;
+    width:200px;
+    z-index:198 !important;
+    background: white !important;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    margin-left:6.5em;
+}
+.color-popup-header {
+    text-align: right;
+}
+.color-popup-header a {
+    cursor:pointer;
+}
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 47px;
+  left: 47px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(++resource++colorpicker.farbtastic/wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .overlay {
+  background: url(++resource++colorpicker.farbtastic/mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden; 
+  background: url(++resource++colorpicker.farbtastic/marker.png) no-repeat;
+}
