@@ -3,7 +3,7 @@ Introduction
 
 The color picker widget allows you to select a color and store its web exadecimal code.
 
-Widget based on TextLinesWidget (plone.z3cform.textlines) and Farbtastic: jQuery color picker plug-in (http://acko.net/dev/farbtastic)
+The widget is based on TextLinesWidget (plone.z3cform.textlines) and Farbtastic, a jQuery color picker plug-in (http://acko.net/dev/farbtastic).
 
 Requirements
 ------------
@@ -30,7 +30,7 @@ Alternatively, buildout users can install collective.z3cform.colorpicker as part
 
 Usage
 =====
-You can use this widget in your form by force the widgetFactory property of a field of your form:
+You can use this widget setting the "widgetFactory" property of a form field:
 ::
 
         from zope import schema
@@ -53,3 +53,10 @@ You can use this widget in your form by force the widgetFactory property of a fi
 
 
 for more information see demo directory in the package.
+
+Contributors
+============
+
+* Giorgio Borelli - gborelli
+* Silvio Tomatis - silviot
+
