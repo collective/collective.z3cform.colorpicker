@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '0.1'
 
@@ -36,10 +35,11 @@ setup(name='collective.z3cform.colorpicker',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFCore',
           'plone.app.z3cform',
       ],
       extras_require={
-          'test': ['plone.app.testing',
+          'test': ['Products.PloneTestCase',
           ],
       },
       entry_points="""
