@@ -1,7 +1,6 @@
-<script type="text/javascript" src="++resource++colorpicker.jpicker/jpicker-1.1.2.min.js"></script>
+<script type="text/javascript" src="++resource++colorpicker.jpicker/jpicker-1.1.6.min.js"></script>
 <style type="text/css">
-    @import "++resource++colorpicker.jpicker/css/jPicker-1.1.2.min.css";
-    @import "++resource++colorpicker.jpicker/jPicker.css";
+    @import "++resource++colorpicker.jpicker/css/jPicker-1.1.6.min.css";
 </style>
 
 <input type="text" id="color" name="" class="" title="" lang="" disabled=""

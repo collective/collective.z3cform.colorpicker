@@ -10,3 +10,11 @@
 # Ignore mo
 *.mo
 
+# Ignore buoldout related files and directories
+var
+develop-eggs
+bin
+parts
+extras
+.mr.developer.cfg
+.installed.cfg
