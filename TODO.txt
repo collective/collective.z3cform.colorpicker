@@ -1,6 +1,0 @@
-TODO
-=====
-
-* Internationalization
-* Close popup when click on page body
-

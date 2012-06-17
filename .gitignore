@@ -18,3 +18,4 @@ parts
 extras
 .mr.developer.cfg
 .installed.cfg
+*.log

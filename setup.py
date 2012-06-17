@@ -38,10 +38,6 @@ setup(name='collective.z3cform.colorpicker',
           'Products.CMFCore',
           'plone.app.z3cform',
       ],
-      extras_require={
-          'test': ['Products.PloneTestCase',
-          ],
-      },
       entry_points="""
       # -*- Entry points: -*-
 
