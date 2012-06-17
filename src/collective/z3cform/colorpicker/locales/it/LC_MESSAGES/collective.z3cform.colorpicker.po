@@ -1,0 +1,26 @@
+# collective.z3cform.colorpicker
+# Giorgio Borelli <giorgio@giorgioborelli.it>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.3\n"
+"POT-Creation-Date: 2012-06-17 12:06+0000\n"
+"PO-Revision-Date: 2012-06-17 12:05+0000\n"
+"Last-Translator: Giorgio Borelli <giorgio@giorgioborelli.it>\n"
+"Language-Team: Giorgio Borelli <giorgio@giorgioborelli.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.z3cform.colorpicker\n"
+
+#: ../colorpicker_input.pt:33
+msgid "Choose color"
+msgstr "Scegli un colore"
+
+#: ../colorpicker_input.pt:36
+msgid "Close popup"
+msgstr "Chiudi"
+
