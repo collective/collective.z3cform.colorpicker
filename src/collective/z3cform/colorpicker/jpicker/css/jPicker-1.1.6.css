@@ -1,4 +1,7 @@
-﻿.jPicker .Icon {
+﻿.jPicker label {
+  font-weight: normal;
+}
+.jPicker .Icon {
   display: inline-block;
   height: 24px; /* change this value if using a different sized color picker icon */
   position: relative; /* make this element an absolute positioning container */
@@ -35,7 +38,7 @@ table.jPicker {
   font-size: 12px !important;
   margin: 0px;
   padding: 5px;
-  width: 545px;
+  width: 550px;
   z-index: 20;
 }
 .jPicker .Move {
@@ -179,7 +182,7 @@ table.jPicker {
 .jPicker td.Radio {
   margin: 0px;
   padding: 0px;
-  width: 31px;
+  width: 40px;
 }
 .jPicker td.Radio input {
   margin: 0px 5px 0px 0px;
@@ -194,7 +197,7 @@ table.jPicker {
   width: 70px;
 }
 .jPicker tr.Hex td.Text {
-  width: 100px;
+  width: 110px;
 }
 .jPicker td.Text input {
   background-color: #fff;

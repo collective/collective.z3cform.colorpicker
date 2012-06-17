@@ -4,6 +4,7 @@ Changelog
 0.3 (unreleased)
 ----------------
 
+- changed some jpicker styles [gborelli]
 - updated jpicker to v1.1.6 [gborelli]
 - refactored egg layout [gborelli]
 - changed Browser import from Testing.testbrowser [gborelli]
