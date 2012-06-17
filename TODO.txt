@@ -2,6 +2,5 @@ TODO
 =====
 
 * Internationalization
-* Make output valid xhtml (css)
 * Close popup when click on page body
 
