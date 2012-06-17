@@ -1,0 +1,14 @@
+#!/Users/giorgio/sviluppo/test_prodotti/bin/python2.6
+
+import sys
+sys.path[0:0] = [
+  '/Users/giorgio/.buildout/eggs/mr.developer-1.21-py2.6.egg',
+  '/Users/giorgio/.buildout/eggs/argparse-1.1-py2.6.egg',
+  '/Users/giorgio/.buildout/eggs/zc.buildout-1.4.4-py2.6.egg',
+  '/Users/giorgio/.buildout/eggs/distribute-0.6.27-py2.6.egg',
+  ]
+
+import mr.developer.develop
+
+if __name__ == '__main__':
+    mr.developer.develop.develop()

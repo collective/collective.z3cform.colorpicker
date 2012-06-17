@@ -1,0 +1,21 @@
+Changelog
+=========
+
+0.3 (unreleased)
+----------------
+
+- refactored egg layout [gborelli]
+- changed Browser import from Testing.testbrowser [gborelli]
+
+
+0.2 (2010-10-31)
+----------------
+
+- included jPicker widget for alpha transparency support
+
+
+0.1 (2009-06-19)
+----------------
+
+* Initial release
+

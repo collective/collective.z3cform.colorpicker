@@ -3,13 +3,22 @@ import os
 
 version = '0.1'
 
+long_description = (
+    open('README.txt').read()
+    + '\n' +
+    'Contributors\n'
+    '============\n'
+    + '\n' +
+    open('CONTRIBUTORS.txt').read()
+    + '\n' +
+    open('CHANGES.txt').read()
+    + '\n')
+
+
 setup(name='collective.z3cform.colorpicker',
       version=version,
-      description="colorpicker widget for z3c.form",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read() +
-                       open("TODO.txt").read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+      description="Colorpicker widget for Plone",
+      long_description=long_description,
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
@@ -20,16 +29,23 @@ setup(name='collective.z3cform.colorpicker',
       author_email='giorgio@giorgioborelli.it',
       url='http://www.giorgioborelli.it',
       license='GPL',
-      packages=find_packages(exclude=['ez_setup']),
+      packages=find_packages('src'),
+      package_dir={'': 'src'},
       namespace_packages=['collective', 'collective.z3cform'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
           'plone.app.z3cform',
       ],
+      extras_require={
+          'test': ['plone.app.testing',
+          ],
+      },
       entry_points="""
       # -*- Entry points: -*-
+
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
-      )
+)

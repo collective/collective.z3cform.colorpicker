@@ -1,6 +1,7 @@
-<script type="text/javascript" src="++resource++colorpicker.farbtastic/farbtastic.js"></script>
+<script type="text/javascript" src="++resource++colorpicker.jpicker/jpicker-1.1.2.min.js"></script>
 <style type="text/css">
-    @import "++resource++colorpicker.farbtastic/farbtastic.css";
+    @import "++resource++colorpicker.jpicker/css/jPicker-1.1.2.min.css";
+    @import "++resource++colorpicker.jpicker/jPicker.css";
 </style>
 
 <input type="text" id="color" name="" class="" title="" lang="" disabled=""
@@ -34,17 +35,6 @@
                        size view/size;
                        maxlength view/maxlength" />
 
-
-<a href="" onClick="return false" tal:attributes="id string:${view/id}-show" i18n:translate="" i18n:domain="collective.z3cform.colorpicker">Choose color</a>
-
-<div tal:attributes="id string:${view/id}-popup" class="color-popup">
-  <div class="color-popup-header"><a tal:attributes="id string:${view/id}-close;" 
-                                     title="Close popup" 
-                                     i18n:domain="collective.z3cform.colorpicker"
-                                     i18n:attributes="title" >(x)</a></div>
-  <div id="colorpicker" tal:attributes="id string:${view/id}-colorpicker"></div>
-</div>
-
 <script type="text/javascript"
-        tal:content="view/getJS">
+       tal:content="view/getJS">
 </script>

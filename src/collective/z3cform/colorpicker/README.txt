@@ -1,6 +1,6 @@
-================
+==================
 ColorPicker Widget
-================
+==================
 
 The color picker widget allows you to select a color and store its web exadecimal code.
 Widget based on TextLinesWidget - plone.z3cform.textlines
@@ -20,7 +20,7 @@ interface:
 
 The widget can be instantiated only using the request:
 
-  >>> from z3c.form.testing import TestRequest
+  >>> from collective.z3cform.colorpicker.tests import TestRequest
   >>> request = TestRequest()
 
   >>> widget = colorpicker.ColorpickerWidget(request)

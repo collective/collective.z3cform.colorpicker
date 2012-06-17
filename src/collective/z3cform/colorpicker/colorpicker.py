@@ -4,7 +4,6 @@ import zope.schema.interfaces
 
 from z3c.form import interfaces
 from z3c.form import widget
-from z3c.form import converter
 from z3c.form.browser import text
 
 class IColorpickerWidget(interfaces.IWidget):
@@ -28,6 +27,7 @@ class ColorpickerWidget(text.TextWidget):
             });
             jQuery('#%s-colorpicker').farbtastic('#%s');
         });""".replace('%s', self.id)
+
 
 def ColorpickerFieldWidget(field, request):
     """IFieldWidget factory for ColorpickerWidget."""
