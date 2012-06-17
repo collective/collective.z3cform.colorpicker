@@ -10,13 +10,15 @@ collective.z3cform.colorpicker provides two different jQuery based widgets:
 
 
 Requirements
-------------
- * plone >= 3.2.1
- * plone.app.z3cform
+============
+
+* plone >= 3.2.1
+* plone.app.z3cform
 
 
 Usage
 =====
+
 You can use this widget setting the "widgetFactory" property of a form field:
 ::
 
