@@ -6,7 +6,7 @@ Introduction
 collective.z3cform.colorpicker provides two different jQuery based widgets:
 
 - `Farbtastic <http://acko.net/dev/farbtastic>`_, a simple color picker.
-- `jPicker <http://johndyer.name/post/2007/09/PhotoShop-like-JavaScript-Color-Picker.aspx>`_, a Photoshop style color picker supporting transparency
+- `jPicker <http://www.digitalmagicpro.com/jPicker/>`_, a jQuery Color Picker Plugin supporting transparency.
 
 
 Requirements
