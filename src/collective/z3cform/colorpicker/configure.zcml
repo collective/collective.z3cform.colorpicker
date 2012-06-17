@@ -3,9 +3,18 @@
     xmlns:z3c="http://namespaces.zope.org/z3c"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.z3cform.colorpicker">
 
-    <include package="plone.z3cform" />
+    <includeDependencies package="." />
+
+    <genericsetup:registerProfile
+      name="default"
+      title="Collective colorpicker"
+      directory="profiles/default"
+      description="Installs the collective.z3cform.colorpicker package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
     <browser:resourceDirectory
         name="colorpicker.farbtastic"
