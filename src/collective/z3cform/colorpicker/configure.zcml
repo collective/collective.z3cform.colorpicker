@@ -27,6 +27,11 @@
         directory="jpicker"
     />
 
+    <browser:resource
+        name="z3cform_colorpicker.js"
+        file="z3cform_colorpicker.js"
+    />
+
     <!-- colorpicker with alpha support jPicker http://www.digitalmagicpro.com/jPicker/ -->
     <class class=".colorpickeralpha.ColorpickerAlphaWidget">
       <require

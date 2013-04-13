@@ -2,12 +2,17 @@
 <object name="portal_javascripts">
   <javascript cacheable="True" compression="safe"
     cookable="True" enabled="True" expression=""
-    id="++resource++colorpicker.jpicker/jpicker-1.1.6.min.js"
+    id="++resource++colorpicker.jpicker/jpicker-1.1.6.js"
     inline="False" />
 
   <javascript cacheable="True" compression="safe"
     cookable="True" enabled="True" expression=""
     id="++resource++colorpicker.farbtastic/farbtastic.js"
+    inline="False" />
+
+  <javascript cacheable="True" compression="safe"
+    cookable="True" enabled="True" expression=""
+    id="++resource++z3cform_colorpicker.js"
     inline="False" />
 
 </object>

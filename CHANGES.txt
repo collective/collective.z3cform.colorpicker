@@ -4,6 +4,7 @@ Changelog
 0.3 (unreleased)
 ----------------
 
+- added z3cform_colorpicker.js to initialize JPicker widget [gborelli]
 - added internationalization support [gborelli]
 - added css and javascript to proper Plone registry in order to make html valid [gborelli]
 - added profile to install colopicker package [gborelli]

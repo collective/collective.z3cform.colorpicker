@@ -6,8 +6,10 @@ from z3c.form import interfaces
 from z3c.form import widget
 from z3c.form.browser import text
 
+
 class IColorpickerWidget(interfaces.IWidget):
     """Colorpicker widget."""
+
 
 class ColorpickerWidget(text.TextWidget):
     maxlength = 7

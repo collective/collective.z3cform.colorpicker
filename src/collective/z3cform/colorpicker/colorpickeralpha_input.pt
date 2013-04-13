@@ -28,7 +28,3 @@
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
-
-<script type="text/javascript"
-       tal:content="view/getJS">
-</script>
