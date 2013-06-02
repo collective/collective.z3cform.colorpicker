@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0 (unreleased)
+1.0 (2013-06-02)
 ----------------
 
 - add z3cform_colorpicker.js to initialize JPicker widget
