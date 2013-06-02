@@ -4,7 +4,7 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- fixed MANIFEST.in
 
 
 1.0 (2013-06-02)
