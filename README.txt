@@ -16,6 +16,13 @@ Requirements
 * plone.app.z3cform
 
 
+Installation
+============
+
+This addon can be installed has any other addons, please follow official
+documentation_.
+
+
 Usage
 =====
 
@@ -51,3 +58,6 @@ You can use this widget setting the "widgetFactory" property of a form field:
 
 
 for more information see demo directory in the package sources.
+
+
+.. _documentation: http://plone.org/documentation/kb/installing-add-ons-quick-how-to

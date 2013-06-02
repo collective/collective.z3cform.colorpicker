@@ -73,6 +73,6 @@
       template="colorpicker_input.pt" />
 
     <!-- example: http://yourplonesite/@@color_form -->
-    <include package=".demo" />
+    <!-- <include package=".demo" /> -->
 
 </configure>

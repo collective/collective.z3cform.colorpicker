@@ -1,27 +1,41 @@
 Changelog
 =========
 
-0.3 (unreleased)
+1.0 (unreleased)
 ----------------
 
-- added z3cform_colorpicker.js to initialize JPicker widget [gborelli]
-- added internationalization support [gborelli]
-- added css and javascript to proper Plone registry in order to make html valid [gborelli]
-- added profile to install colorpicker package [gborelli]
-- changed some jpicker styles [gborelli]
-- updated jpicker to v1.1.6 [gborelli]
-- refactored egg layout [gborelli]
-- changed Browser import from Testing.testbrowser [gborelli]
+- add z3cform_colorpicker.js to initialize JPicker widget
+  [gborelli]
+
+- add internationalization support
+  [gborelli]
+
+- add css and javascript to Plone registry in order to make html valid
+  [gborelli]
+
+- add profile to install colorpicker package
+  [gborelli]
+
+- change some jpicker styles
+  [gborelli]
+
+- update jpicker to v1.1.6
+  [gborelli]
+
+- egg layout refactoring
+  [gborelli]
+
+- change Browser import from Testing.testbrowser
+  [gborelli]
 
 
 0.2 (2010-10-31)
 ----------------
 
-- included jPicker widget for alpha transparency support
-
+- include jPicker widget for alpha transparency support
+  [gborelli]
 
 0.1 (2009-06-19)
 ----------------
 
 * Initial release
-
