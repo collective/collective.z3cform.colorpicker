@@ -4,7 +4,11 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Renamed txt files to rst, without symlinks.  Symlinks can give
+  installation problems, due to either the symlink or the original
+  file missing from the distribution or being empty, because the link
+  can end up the wrong way around.  Fixes issue #1.
+  [maurits]
 
 
 1.2 (2015-05-02)
