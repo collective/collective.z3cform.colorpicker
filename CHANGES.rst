@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Remove from jpicker js file the bad chars from the begining
+  [bloodbare]
+
 - Renamed txt files to rst, without symlinks.  Symlinks can give
   installation problems, due to either the symlink or the original
   file missing from the distribution or being empty, because the link
