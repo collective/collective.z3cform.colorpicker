@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3 (unreleased)
+1.3 (2015-10-05)
 ----------------
 
 - Remove from jpicker js file the bad chars from the begining
