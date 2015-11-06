@@ -36,7 +36,7 @@
   <div class="color-popup-header"><a tal:attributes="id string:${view/id}-close;"
                                      title="Close popup"
                                      i18n:domain="collective.z3cform.colorpicker"
-                                     i18n:attributes="title" >(x)</a></div>
+                                     i18n:attributes="title" i18n:translate="label_close_popup">(x)</a></div>
   <div id="colorpicker" tal:attributes="id string:${view/id}-colorpicker"></div>
 </div>
 

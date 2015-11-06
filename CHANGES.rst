@@ -4,7 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Made the close button translatable.
+  Found with ``i18ndude find-untranslated .``.
+  [maurits]
 
 
 1.3 (2015-10-05)
