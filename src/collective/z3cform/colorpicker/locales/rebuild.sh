@@ -2,7 +2,7 @@
 
 PRODUCT=collective.z3cform.colorpicker
 
-i18ndude rebuild-pot --pot ../locales/${PRODUCT}.pot --create $PRODUCT ../
+i18ndude rebuild-pot --pot ../locales/${PRODUCT}.pot --create $PRODUCT --exclude="README.html Example.html" ../
 i18ndude sync --pot ../locales/${PRODUCT}.pot ../locales/*/LC_MESSAGES/${PRODUCT}.po
 
 for lang in $(find ../locales -mindepth 1 -maxdepth 1 -type d); do
@@ -27,4 +27,3 @@ touch ./rebuild_i18n.log
 
 find ../ -name "*pt" | xargs i18ndude find-untranslated > ./rebuild_i18n.log
 # Ok, now poedit is your friend!
-
