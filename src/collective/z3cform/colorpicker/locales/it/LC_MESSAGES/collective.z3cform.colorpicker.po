@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.3\n"
-"POT-Creation-Date: 2012-06-17 12:06+0000\n"
+"POT-Creation-Date: 2015-11-06 11:46+0000\n"
 "PO-Revision-Date: 2012-06-17 12:05+0000\n"
 "Last-Translator: Giorgio Borelli <giorgio@giorgioborelli.it>\n"
 "Language-Team: Giorgio Borelli <giorgio@giorgioborelli.it>\n"
@@ -23,4 +23,9 @@ msgstr "Scegli un colore"
 #: ../colorpicker_input.pt:36
 msgid "Close popup"
 msgstr "Chiudi"
+
+#. Default: "(x)"
+#: ../colorpicker_input.pt:36
+msgid "label_close_popup"
+msgstr ""
 

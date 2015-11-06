@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-06-17 12:06+0000\n"
+"POT-Creation-Date: 2015-11-06 11:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,5 +23,10 @@ msgstr ""
 
 #: ../colorpicker_input.pt:36
 msgid "Close popup"
+msgstr ""
+
+#. Default: "(x)"
+#: ../colorpicker_input.pt:36
+msgid "label_close_popup"
 msgstr ""
 
