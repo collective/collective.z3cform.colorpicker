@@ -4,6 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Added Dutch translations.
+  [maurits]
+
 - Made the close button translatable.
   Found with ``i18ndude find-untranslated .``.
   [maurits]

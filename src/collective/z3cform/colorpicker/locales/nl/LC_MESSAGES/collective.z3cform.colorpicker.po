@@ -1,0 +1,32 @@
+# Translators:
+# Maurits van Rees <m.van.rees@zestsoftware.nl>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.z3cform.colorpicker 1.0\n"
+"POT-Creation-Date: 2015-11-06 11:46+0000\n"
+"PO-Revision-Date: 2015-11-06 12:46+0100\n"
+"Last-Translator: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
+"Language-Team: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language: nl\n"
+"Language-Code: nl\n"
+"Language-Name: Nederlands\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.z3cform.colorpicker\n"
+"Language: nl\n"
+
+#: ../colorpicker_input.pt:33
+msgid "Choose color"
+msgstr "Kies kleur"
+
+#: ../colorpicker_input.pt:36
+msgid "Close popup"
+msgstr "Sluit popup"
+
+#. Default: "(x)"
+#: ../colorpicker_input.pt:36
+msgid "label_close_popup"
+msgstr "(y)"
