@@ -3,7 +3,7 @@ MAINTAINER Giorgio Borelli
 
 USER root
 
-COPY buildout.cfg buildout.cfg
+COPY docker-buildout.cfg buildout.cfg
 COPY . src/collective.z3cform.colorpicker
 RUN python bin/buildout -v
 COPY docker-entrypoint.sh docker-entrypoint.sh
