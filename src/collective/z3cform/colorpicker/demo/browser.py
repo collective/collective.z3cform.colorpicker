@@ -8,13 +8,15 @@ from ..colorpickeralpha import ColorpickerAlphaFieldWidget
 
 
 class IColorForm(Interface):
-    color = schema.TextLine(title=u"Color",
-                               description=u"",
-                               required=False)
+    color = schema.TextLine(
+        title=u"Color - la mia form",
+        description=u"",
+        required=False)
 
-    alphacolor = schema.TextLine(title=u"Color with alpha layer support",
-                               description=u"",
-                               required=False)
+    alphacolor = schema.TextLine(
+        title=u"Color with alpha layer support",
+        description=u"",
+        required=False)
 
 
 class Color(object):
