@@ -1,5 +1,5 @@
-FROM abstracttechnology/plone:4.3
-MAINTAINER Giorgio Borelli
+FROM abstracttechnology/plone:5.0
+MAINTAINER Giorgio Borelli <giorgio@giorgioborelli.it>
 
 USER root
 
