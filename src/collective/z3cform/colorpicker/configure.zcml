@@ -64,7 +64,7 @@
       layer="z3c.form.interfaces.IFormLayer"
       template="colorpicker_input.pt" />
 
-    <!-- Example: http://yourplonesite/@@colorpicker_demo -->
+    <!-- Example: http://<yourplonesite>/@@colorpicker-demo -->
     <!-- <include package=".demo" /> -->
 
 </configure>

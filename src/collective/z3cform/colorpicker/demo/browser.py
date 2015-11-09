@@ -1,31 +1,23 @@
-from zope.interface import implements
-from zope.interface import Interface
+from plone.z3cform.layout import wrap_form
 from z3c.form import form, field, button
 from zope import schema
-from plone.z3cform.layout import wrap_form
-from ..colorpicker import ColorpickerFieldWidget
-from ..colorpickeralpha import ColorpickerAlphaFieldWidget
+from zope.interface import Interface
+from collective.z3cform.colorpicker import ColorpickerFieldWidget
+from collective.z3cform.colorpicker import ColorpickerAlphaFieldWidget
 
 
 class IColorForm(Interface):
     color = schema.TextLine(
-        title=u"Color - la mia form",
+        title=u"Color",
         description=u"",
-        required=False)
+        required=False,
+        default=u"#6298c9")
 
     alphacolor = schema.TextLine(
         title=u"Color with alpha layer support",
         description=u"",
-        required=False)
-
-
-class Color(object):
-    implements(IColorForm)
-    color = '#ff0000'
-    alphacolor = 'ff0000cc'
-
-    def __init__(self, context):
-        self.context = context
+        required=False,
+        default=u"rgba(104,191,144,0.55)")
 
 
 class ColorDemoForm(form.Form):
@@ -34,13 +26,20 @@ class ColorDemoForm(form.Form):
     fields = field.Fields(IColorForm)
     fields['color'].widgetFactory = ColorpickerFieldWidget
     fields['alphacolor'].widgetFactory = ColorpickerAlphaFieldWidget
+    ignoreContext = True
+
+    label = u"Colopicker Demo"
+    description = (
+        u"Color picker widget based on "
+        u"http://mjolnic.com/bootstrap-colorpicker/"
+    )
 
     def __init__(self, context, request):
         super(ColorDemoForm, self).__init__(context, request)
         self.request.set('disable_border', True)
 
     @button.buttonAndHandler(u'Save')
-    def handleApply(self, action):  # pylint: disable=W0613
+    def handleApply(self, action):
         # data, errors = self.extractData()
         return
 

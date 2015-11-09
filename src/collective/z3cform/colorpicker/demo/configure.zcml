@@ -4,14 +4,9 @@
     i18n_domain="collective.z3cform.colorpicker">
 
     <browser:page
-        name="color_form"
+        name="colorpicker-demo"
         for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
         class=".browser.Demo"
         permission="zope.Public" />
-
-    <adapter
-        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
-        provides=".browser.IColorForm"
-        factory=".browser.Color" />
 
 </configure>
