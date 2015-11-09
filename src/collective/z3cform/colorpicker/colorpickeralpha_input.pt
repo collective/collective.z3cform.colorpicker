@@ -1,5 +1,5 @@
 <div class="input-group pat-colorpicker"
-     data-pat-colorpicker="color_type: rgba">
+     data-pat-colorpicker="format: rgba">
   <input type="text" id="color" name="" class="" title="" lang="" disabled=""
        readonly="" alt="" tabindex="" accesskey="" size="" maxlength=""
        tal:attributes="id string:${view/id};

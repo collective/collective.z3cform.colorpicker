@@ -1,5 +1,5 @@
 <div class="input-group pat-colorpicker"
-     data-pat-colorpicker="color_type: hex">
+     data-pat-colorpicker="format: hex">
   <input type="text" id="color" name="" class="" title="" lang="" disabled=""
        readonly="" alt="" tabindex="" accesskey="" size="" maxlength=""
        tal:attributes="id string:${view/id};
