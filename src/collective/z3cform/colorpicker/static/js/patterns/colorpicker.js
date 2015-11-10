@@ -32,7 +32,6 @@
 define([
   'jquery',
   'mockup-patterns-base',
-  'bootstrap-tooltip',
   'bootstrap-colorpicker'
 ], function($, Base) {
   'use strict';
