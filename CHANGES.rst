@@ -4,7 +4,7 @@ Changelog
 2.0 (Unreleased)
 ----------------
 
-- Added Color and ColorAlpha fields to adapt the respectivea fieldswidget
+- Added Color and ColorAlpha fields for colorpicker widgets
   [giorgio]
 
 - Removed JPicker and farbastic Js
