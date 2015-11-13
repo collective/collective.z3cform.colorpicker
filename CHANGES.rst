@@ -4,6 +4,9 @@ Changelog
 2.0 (Unreleased)
 ----------------
 
+- Added Color and ColorAlpha fields to adapt the respectivea fieldswidget
+  [giorgio]
+
 - Removed JPicker and farbastic Js
   [gborelli]
 

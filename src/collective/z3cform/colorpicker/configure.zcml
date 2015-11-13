@@ -30,7 +30,6 @@
           interface="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget" />
     </class>
 
-    <!-- This widget is not configured for any field by default -->
     <z3c:widgetTemplate
         mode="display"
         widget="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget"
@@ -44,25 +43,35 @@
         template="colorpickeralpha_input.pt" />
 
 
-  <!-- simple colorpicker farbastic http://acko.net/dev/farbtastic -->
-  <class class=".colorpicker.ColorpickerWidget">
-    <require
-        permission="zope.Public"
-        interface="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget" />
-  </class>
+    <adapter
+        factory=".colorpickeralpha.ColorpickerAlphaFieldWidget"
+        for=".fields.IColorAlpha
+             z3c.form.interfaces.IFormLayer"
+        />
 
-  <!-- this widget is not configured for any field by default -->
-  <z3c:widgetTemplate
-      mode="display"
-      widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
-      layer="z3c.form.interfaces.IFormLayer"
-      template="colorpicker_display.pt" />
+    <class class=".colorpicker.ColorpickerWidget">
+      <require
+          permission="zope.Public"
+          interface="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget" />
+    </class>
 
-  <z3c:widgetTemplate
-      mode="input"
-      widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
-      layer="z3c.form.interfaces.IFormLayer"
-      template="colorpicker_input.pt" />
+    <z3c:widgetTemplate
+        mode="display"
+        widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
+        layer="z3c.form.interfaces.IFormLayer"
+        template="colorpicker_display.pt" />
+
+    <z3c:widgetTemplate
+        mode="input"
+        widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
+        layer="z3c.form.interfaces.IFormLayer"
+        template="colorpicker_input.pt" />
+
+    <adapter
+        factory=".colorpicker.ColorpickerFieldWidget"
+        for=".fields.IColor
+             z3c.form.interfaces.IFormLayer"
+        />
 
     <!-- Example: http://<yourplonesite>/@@colorpicker-demo -->
     <!-- <include package=".demo" /> -->

@@ -29,33 +29,28 @@ Usage
 You can use this widget setting the "widgetFactory" property of a form field:
 ::
 
-        from zope import schema
         from z3c.form import form, field
-        from collective.z3cform.colorpicker.colorpicker import ColorpickerFieldWidget
-        from collective.z3cform.colorpicker.colorpickeralpha import ColorpickerAlphaFieldWidget
+        from collective.z3cform.colorpicker import Color
+        from collective.z3cform.colorpicker import ColorAlpha
 
         class IColorForm(interface.Interface):
-            color = schema.TextLine(title=u"Color",
-                                    description=u"",
-                                    required=False)
-            alphacolor = schema.TextLine(title=u"Color with alpha layer support",
-                                         description=u"",
-                                         required=False)
+            color = Color(
+                title=u"Color",
+                description=u"",
+                required=False,
+                default="#ff0000"
+            )
+            alphacolor = ColorAlpha(
+                title=u"Color with alpha layer support",
+                description=u"",
+                required=False,
+                default=u"rgba(104,191,144,0.55)"
+            )
 
-        class Color(object):
-            color = '#ff0000'
-            alphacolor = 'ff0000cc'
-
-            def __init__(self, context):
-                self.context = context
 
         class ColorForm(form.Form):
             fields = field.Fields(IColorForm)
-            fields['color'].widgetFactory = ColorpickerFieldWidget
-            fields['alphacolor'].widgetFactory = ColorpickerAlphaFieldWidget
-
             ...
-
 
 for more information see demo directory in the package sources.
 
