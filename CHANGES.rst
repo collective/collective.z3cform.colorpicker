@@ -22,7 +22,8 @@ Changelog
 - Improved demo page - http://<yourplonesite>/@@colorpicker-demo
   [gborelli]
 
-1.4 (unreleased)
+
+1.4 (2015-11-11)
 ----------------
 
 - Added Dutch translations.
