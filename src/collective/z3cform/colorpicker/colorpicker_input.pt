@@ -1,8 +1,10 @@
-<input type="text" id="color" name="" class="" title="" lang="" disabled=""
+<div class="input-group pat-colorpicker"
+     data-pat-colorpicker="format: hex">
+  <input type="text" id="color" name="" class="" title="" lang="" disabled=""
        readonly="" alt="" tabindex="" accesskey="" size="" maxlength=""
        tal:attributes="id string:${view/id};
                        name view/name;
-                       class string:${view/klass} color;
+                       class string:${view/klass} form-control;
                        style view/style;
                        title view/title;
                        lang view/lang;
@@ -28,18 +30,5 @@
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
-
-
-<a href="" onClick="return false" tal:attributes="id string:${view/id}-show" i18n:translate="" i18n:domain="collective.z3cform.colorpicker">Choose color</a>
-
-<div tal:attributes="id string:${view/id}-popup" class="color-popup">
-  <div class="color-popup-header"><a tal:attributes="id string:${view/id}-close;"
-                                     title="Close popup"
-                                     i18n:domain="collective.z3cform.colorpicker"
-                                     i18n:attributes="title" i18n:translate="label_close_popup">(x)</a></div>
-  <div id="colorpicker" tal:attributes="id string:${view/id}-colorpicker"></div>
+  <span class="input-group-addon"><i></i></span>
 </div>
-
-<script type="text/javascript"
-        tal:content="view/getJS">
-</script>

@@ -3,6 +3,7 @@
     xmlns:z3c="http://namespaces.zope.org/z3c"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.z3cform.colorpicker">
 
@@ -17,29 +18,18 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-    <browser:resourceDirectory
-        name="colorpicker.farbtastic"
-        directory="farbtastic"
-    />
+    <plone:static
+        directory="static"
+        type="plone"
+        name="colorpicker.static"
+        />
 
-    <browser:resourceDirectory
-        name="colorpicker.jpicker"
-        directory="jpicker"
-    />
-
-    <browser:resource
-        name="z3cform_colorpicker.js"
-        file="z3cform_colorpicker.js"
-    />
-
-    <!-- colorpicker with alpha support jPicker http://www.digitalmagicpro.com/jPicker/ -->
     <class class=".colorpickeralpha.ColorpickerAlphaWidget">
       <require
           permission="zope.Public"
           interface="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget" />
     </class>
 
-    <!-- this widget is not configured for any field by default -->
     <z3c:widgetTemplate
         mode="display"
         widget="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget"
@@ -52,27 +42,38 @@
         layer="z3c.form.interfaces.IFormLayer"
         template="colorpickeralpha_input.pt" />
 
-  <!-- simple colorpicker farbastic http://acko.net/dev/farbtastic -->
-  <class class=".colorpicker.ColorpickerWidget">
-    <require
-        permission="zope.Public"
-        interface="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget" />
-  </class>
 
-  <!-- this widget is not configured for any field by default -->
-  <z3c:widgetTemplate
-      mode="display"
-      widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
-      layer="z3c.form.interfaces.IFormLayer"
-      template="colorpicker_display.pt" />
+    <adapter
+        factory=".colorpickeralpha.ColorpickerAlphaFieldWidget"
+        for=".fields.IColorAlpha
+             z3c.form.interfaces.IFormLayer"
+        />
 
-  <z3c:widgetTemplate
-      mode="input"
-      widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
-      layer="z3c.form.interfaces.IFormLayer"
-      template="colorpicker_input.pt" />
+    <class class=".colorpicker.ColorpickerWidget">
+      <require
+          permission="zope.Public"
+          interface="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget" />
+    </class>
 
-    <!-- example: http://yourplonesite/@@color_form -->
+    <z3c:widgetTemplate
+        mode="display"
+        widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
+        layer="z3c.form.interfaces.IFormLayer"
+        template="colorpicker_display.pt" />
+
+    <z3c:widgetTemplate
+        mode="input"
+        widget="collective.z3cform.colorpicker.colorpicker.IColorpickerWidget"
+        layer="z3c.form.interfaces.IFormLayer"
+        template="colorpicker_input.pt" />
+
+    <adapter
+        factory=".colorpicker.ColorpickerFieldWidget"
+        for=".fields.IColor
+             z3c.form.interfaces.IFormLayer"
+        />
+
+    <!-- Example: http://<yourplonesite>/@@colorpicker-demo -->
     <!-- <include package=".demo" /> -->
 
 </configure>

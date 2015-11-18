@@ -1,36 +1,28 @@
-import zope.component
-import zope.interface
-import zope.schema.interfaces
+from z3c.form.interfaces import IFormLayer
+from z3c.form.interfaces import IFieldWidget
 
-from z3c.form import interfaces
-from z3c.form import widget
-from z3c.form.browser import text
+from z3c.form.interfaces import IWidget
+from z3c.form.widget import FieldWidget
+from z3c.form.browser.text import TextWidget
+from zope.component import adapter
+from zope.interface import implementer
+from zope.interface import implementsOnly
+from zope.schema.interfaces import IField
 
 
-class IColorpickerWidget(interfaces.IWidget):
+class IColorpickerWidget(IWidget):
     """Colorpicker widget."""
 
 
-class ColorpickerWidget(text.TextWidget):
+class ColorpickerWidget(TextWidget):
+    implementsOnly(IColorpickerWidget)
     maxlength = 7
     size = 8
-    readonly = True
-
-    zope.interface.implementsOnly(IColorpickerWidget)
-
-    def getJS(self):
-        return """jQuery(document).ready(function() {
-            jQuery("#%s-close").click(function(){
-                  jQuery("#%s-popup").hide(400);
-            });
-
-            jQuery("#%s-show").click(function(){
-                  jQuery("#%s-popup").toggle(400);
-            });
-            jQuery('#%s-colorpicker').farbtastic('#%s');
-        });""".replace('%s', self.id)
+    klass = u'pat-colorpicker'
 
 
+@adapter(IField, IFormLayer)
+@implementer(IFieldWidget)
 def ColorpickerFieldWidget(field, request):
     """IFieldWidget factory for ColorpickerWidget."""
-    return widget.FieldWidget(field, ColorpickerWidget(request))
+    return FieldWidget(field, ColorpickerWidget(request))

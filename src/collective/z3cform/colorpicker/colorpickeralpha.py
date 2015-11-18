@@ -1,32 +1,26 @@
-import zope.component
-import zope.interface
-import zope.schema.interfaces
-
-from z3c.form import interfaces
-from z3c.form import widget
-from z3c.form.browser import text
-
-
-class IColorpickerAlphaWidget(interfaces.IWidget):
-    """Colorpicker widget."""
+from z3c.form.interfaces import IFormLayer
+from z3c.form.interfaces import IFieldWidget
+from z3c.form.interfaces import IWidget
+from z3c.form.widget import FieldWidget
+from z3c.form.browser.text import TextWidget
+from zope.component import adapter
+from zope.interface import implementer
+from zope.interface import implementsOnly
+from zope.schema.interfaces import IField
 
 
-class ColorpickerAlphaWidget(text.TextWidget):
-    maxlength = 7
-    size = 8
-    readonly = False
-    klass = u'jpicker-widget'
-
-    zope.interface.implementsOnly(IColorpickerAlphaWidget)
-
-    # def getJS(self):
-    #     return """jq(document).ready(function() {jq('#widgetid').jPicker({
-    #             window:{title:'Color',
-    #                     alphaSupport:true,},
-    #             images:{clientPath: '++resource++colorpicker.jpicker/images/'},
-    #        });""".replace('widgetid', self.id)
+class IColorpickerAlphaWidget(IWidget):
+    """Colorpicker widget with alpha support."""
 
 
+class ColorpickerAlphaWidget(TextWidget):
+    implementsOnly(IColorpickerAlphaWidget)
+    size = 10
+    klass = u'pat-colorpicker'
+
+
+@adapter(IField, IFormLayer)
+@implementer(IFieldWidget)
 def ColorpickerAlphaFieldWidget(field, request):
     """IFieldWidget factory for ColorpickerAlphaWidget."""
-    return widget.FieldWidget(field, ColorpickerAlphaWidget(request))
+    return FieldWidget(field, ColorpickerAlphaWidget(request))

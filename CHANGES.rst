@@ -1,10 +1,26 @@
 Changelog
 =========
 
-1.5 (unreleased)
+2.0 (Unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added Color and ColorAlpha fields for colorpicker widgets
+  [giorgio]
+
+- Removed JPicker and farbastic Js
+  [gborelli]
+
+- Added colorpicker patterns based on bootstrap-colorpicker
+  [gborelli]
+
+- Added plone5.0 resource registry support
+  [gborelli]
+
+- Added Docker configuration for development
+  [gborelli]
+
+- Improved demo page - http://<yourplonesite>/@@colorpicker-demo
+  [gborelli]
 
 
 1.4 (2015-11-11)
