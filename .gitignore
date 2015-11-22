@@ -19,7 +19,5 @@ extras
 .mr.developer.cfg
 .installed.cfg
 *.log
-
 node_modules
 bower_components
-build
