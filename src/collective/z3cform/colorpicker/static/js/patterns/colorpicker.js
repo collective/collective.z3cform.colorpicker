@@ -28,16 +28,15 @@
  *     </div>
  *
  */
-
 define([
   'jquery',
   'mockup-patterns-base',
-  'bootstrap-colorpicker'
+  'bootstrap-tooltip',
+  'mjolnic-bootstrap-colorpicker'
 ], function($, Base) {
   'use strict';
-
   var colorpickerPattern = Base.extend({
-
+    // The name for this pattern
     name: 'colorpicker',
 
     defaults: {
@@ -53,6 +52,7 @@ define([
         format: self.options.format
       });
     }
+
   });
 
   return colorpickerPattern;

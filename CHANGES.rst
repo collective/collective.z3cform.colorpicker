@@ -7,7 +7,7 @@ Changelog
 - Added Color and ColorAlpha fields for colorpicker widgets
   [giorgio]
 
-- Removed JPicker and farbastic Js
+- Removed JPicker and farbastic javascripts
   [gborelli]
 
 - Added colorpicker patterns based on bootstrap-colorpicker

@@ -3,6 +3,11 @@ define([
   'jquery',
   'mockup-registry',
   'mockup-patterns-base',
+//   Uncomment the line below to include all patterns from plone-mockup
+//   'mockup-bundles-widgets',
+//   <!~~ Add patterns below this line ~~!>
+  'bootstrap-tooltip',
+  'mjolnic-bootstrap-colorpicker',
   'colorpicker-patterns-colorpicker'
 ], function($, Registry, Base) {
   'use strict';
@@ -21,6 +26,5 @@ define([
       Registry.scan($('body'));
     });
   }
-
   return colorpickerBundle;
 });

@@ -1,0 +1,12 @@
+{
+  "name": "colorpicker",
+  "version": "0.0.1",
+  "description": "Colorpicker fro Plone",
+  "dependencies": {
+    "plone-mockup": "1.7.0",
+    "mjolnic-bootstrap-colorpicker": "2.3"
+  },
+  "devDependencies": {
+    "chai": "1.7.2"
+  }
+}
