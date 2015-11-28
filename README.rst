@@ -3,17 +3,21 @@
 Introduction
 ============
 
-collective.z3cform.colorpicker provides two different jQuery based widgets:
+collective.z3cform.colorpicker provides a color picker widget for
+z3c.form based `bootstrap-colopicker`_.
 
-- `Farbtastic <http://acko.net/dev/farbtastic>`_, a simple color picker.
-- `jPicker <http://www.digitalmagicpro.com/jPicker/>`_, a jQuery Color Picker Plugin supporting transparency.
+.. image:: https://raw.githubusercontent.com/collective/collective.z3cform.colorpicker/master/screenshot.png
 
 
 Requirements
 ============
 
-* plone >= 3.2.1
+* Plone >= 5.0
 * plone.app.z3cform
+
+
+For previous Plone versions use a version collective.z3cform.colorpicker
+less than 2.x
 
 
 Installation
@@ -55,4 +59,6 @@ You can use this widget setting the "widgetFactory" property of a form field:
 for more information see demo directory in the package sources.
 
 
+
 .. _documentation: http://plone.org/documentation/kb/installing-add-ons-quick-how-to
+.. _bootstrap-colopicker: http://mjolnic.com/bootstrap-colorpicker/
