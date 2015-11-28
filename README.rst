@@ -12,8 +12,11 @@ collective.z3cform.colorpicker provides two different jQuery based widgets:
 Requirements
 ============
 
-* plone >= 3.2.1
+* Plone >= 3.2.1 < 5.0
 * plone.app.z3cform
+
+
+For Plone 5.x use a version of collective.z3cform.colorpicker greater than 1.x
 
 
 Installation
