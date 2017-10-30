@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from zope.interface import implementer
 from zope.schema import TextLine
 from zope.schema.interfaces import ITextLine

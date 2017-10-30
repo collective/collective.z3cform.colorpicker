@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from plone.z3cform.layout import wrap_form
 from z3c.form import form, field, button
 from zope.interface import Interface
@@ -39,5 +40,6 @@ class ColorDemoForm(form.Form):
     def handleApply(self, action):
         # data, errors = self.extractData()
         return
+
 
 Demo = wrap_form(ColorDemoForm)
