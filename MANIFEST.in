@@ -2,3 +2,9 @@ recursive-include src *
 recursive-include docs *
 include *rst
 global-exclude *.pyc
+exclude *.png
+exclude *.sh
+exclude *.yml
+exclude Dockerfile
+exclude Makefile
+exclude docker-buildout.cfg
