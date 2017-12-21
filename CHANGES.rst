@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0 (Unreleased)
+2.0 (2017-12-21)
 ----------------
 
 - Added Color and ColorAlpha fields for colorpicker widgets
