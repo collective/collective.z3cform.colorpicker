@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+  <javascript remove="True" id="++resource++colorpicker.jpicker/jpicker-1.1.6.js"/>
+  <javascript remove="True" id="++resource++colorpicker.farbtastic/farbtastic.js"/>
+  <javascript remove="True" id="++resource++z3cform_colorpicker.js"/>
+</object>

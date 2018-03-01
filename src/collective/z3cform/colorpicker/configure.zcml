@@ -16,6 +16,13 @@
       description="Installs the collective.z3cform.colorpicker package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+    <genericsetup:registerProfile
+      name="uninstall"
+      title="Collective colorpicker (uninstall)"
+      directory="profiles/uninstall"
+      description="Unstalls the collective.z3cform.colorpicker package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
     <browser:resourceDirectory
         name="colorpicker.farbtastic"
