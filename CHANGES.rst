@@ -4,7 +4,8 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add uninstall profile.
+  [thet]
 
 
 1.4 (2015-11-11)
