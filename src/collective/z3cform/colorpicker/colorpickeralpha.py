@@ -5,16 +5,15 @@ from z3c.form.widget import FieldWidget
 from z3c.form.browser.text import TextWidget
 from zope.component import adapter
 from zope.interface import implementer
-from zope.interface import implementsOnly
+from zope.interface import implementer_only
 from zope.schema.interfaces import IField
 
 
 class IColorpickerAlphaWidget(IWidget):
     """Colorpicker widget with alpha support."""
 
-
+@implementer_only(IColorpickerAlphaWidget)
 class ColorpickerAlphaWidget(TextWidget):
-    implementsOnly(IColorpickerAlphaWidget)
     size = 10
     klass = u'pat-colorpicker'
 
