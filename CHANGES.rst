@@ -4,7 +4,7 @@ Changelog
 2.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Python 3 support.  [espen]
 
 
 2.0 (2017-12-21)
