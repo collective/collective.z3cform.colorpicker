@@ -7,6 +7,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.z3cform.colorpicker">
 
+    <include package="plone.app.z3cform" />
     <i18n:registerTranslations directory="locales" />
 
     <genericsetup:registerProfile
