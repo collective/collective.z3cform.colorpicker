@@ -17,7 +17,6 @@ class IColorpickerWidget(IWidget):
 class ColorpickerWidget(TextWidget):
     maxlength = 7
     size = 8
-    klass = u'pat-colorpicker'
 
 
 @adapter(IField, IFormLayer)

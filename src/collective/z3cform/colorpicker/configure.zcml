@@ -18,37 +18,6 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-    <plone:static
-        directory="static"
-        type="plone"
-        name="colorpicker.static"
-        />
-
-    <class class=".colorpickeralpha.ColorpickerAlphaWidget">
-      <require
-          permission="zope.Public"
-          interface="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget" />
-    </class>
-
-    <z3c:widgetTemplate
-        mode="display"
-        widget="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget"
-        layer="z3c.form.interfaces.IFormLayer"
-        template="colorpickeralpha_display.pt" />
-
-    <z3c:widgetTemplate
-        mode="input"
-        widget="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget"
-        layer="z3c.form.interfaces.IFormLayer"
-        template="colorpickeralpha_input.pt" />
-
-
-    <adapter
-        factory=".colorpickeralpha.ColorpickerAlphaFieldWidget"
-        for=".fields.IColorAlpha
-             z3c.form.interfaces.IFormLayer"
-        />
-
     <class class=".colorpicker.ColorpickerWidget">
       <require
           permission="zope.Public"

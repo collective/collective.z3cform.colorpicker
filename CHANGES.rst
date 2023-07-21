@@ -1,10 +1,14 @@
 Changelog
 =========
 
-2.1.1 (unreleased)
+3.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move to native input color field, which is supported by all moderns browsers
+  [MrTango]
+
+- Plone compatibility
+  [MrTango]
 
 
 2.1.0 (2021-09-17)
