@@ -2,7 +2,6 @@ from plone.z3cform.layout import wrap_form
 from z3c.form import form, field, button
 from zope.interface import Interface
 from collective.z3cform.colorpicker import Color
-from collective.z3cform.colorpicker import ColorAlpha
 
 
 class IColorForm(Interface):
@@ -11,12 +10,6 @@ class IColorForm(Interface):
         description=u"",
         required=False,
         default=u"#6298c9")
-
-    alphacolor = ColorAlpha(
-        title=u"Color with alpha layer support",
-        description=u"",
-        required=False,
-        default=u"rgba(104,191,144,0.55)")
 
 
 class ColorDemoForm(form.Form):
@@ -27,8 +20,7 @@ class ColorDemoForm(form.Form):
 
     label = u"Colopicker Demo"
     description = (
-        u"Color picker widget based on "
-        u"http://mjolnic.com/bootstrap-colorpicker/"
+        u"Color picker widget using native color input support."
     )
 
     def __init__(self, context, request):

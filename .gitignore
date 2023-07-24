@@ -21,3 +21,5 @@ extras
 *.log
 node_modules
 bower_components
+/venv
+/.python-version

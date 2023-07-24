@@ -7,7 +7,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.z3cform.colorpicker">
 
-    <includeDependencies package="." />
+    <include package="plone.app.z3cform" />
     <i18n:registerTranslations directory="locales" />
 
     <genericsetup:registerProfile
@@ -17,37 +17,6 @@
       description="Installs the collective.z3cform.colorpicker package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-
-    <plone:static
-        directory="static"
-        type="plone"
-        name="colorpicker.static"
-        />
-
-    <class class=".colorpickeralpha.ColorpickerAlphaWidget">
-      <require
-          permission="zope.Public"
-          interface="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget" />
-    </class>
-
-    <z3c:widgetTemplate
-        mode="display"
-        widget="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget"
-        layer="z3c.form.interfaces.IFormLayer"
-        template="colorpickeralpha_display.pt" />
-
-    <z3c:widgetTemplate
-        mode="input"
-        widget="collective.z3cform.colorpicker.colorpickeralpha.IColorpickerAlphaWidget"
-        layer="z3c.form.interfaces.IFormLayer"
-        template="colorpickeralpha_input.pt" />
-
-
-    <adapter
-        factory=".colorpickeralpha.ColorpickerAlphaFieldWidget"
-        for=".fields.IColorAlpha
-             z3c.form.interfaces.IFormLayer"
-        />
 
     <class class=".colorpicker.ColorpickerWidget">
       <require

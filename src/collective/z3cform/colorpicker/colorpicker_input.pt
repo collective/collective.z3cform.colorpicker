@@ -1,6 +1,5 @@
-<div class="input-group pat-colorpicker"
-     data-pat-colorpicker="format: hex">
-  <input type="text" id="color" name="" class="" title="" lang="" disabled=""
+<div class="input-group">
+  <input type="color" name="" class="" title="" lang="" disabled=""
        readonly="" alt="" tabindex="" accesskey="" size="" maxlength=""
        tal:attributes="id string:${view/id};
                        name view/name;
@@ -30,5 +29,4 @@
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
-  <span class="input-group-addon"><i></i></span>
 </div>
