@@ -1,7 +1,7 @@
 Changelog
 =========
 
-3.0.0 (unreleased)
+3.0.0 (2023-07-24)
 ------------------
 
 - Move to native input color field, which is supported by all moderns browsers
