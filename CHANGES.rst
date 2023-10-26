@@ -4,7 +4,8 @@ Changelog
 3.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix GS breaking because of empty registry.xml file
+  [MTango]
 
 
 3.0.0 (2023-07-24)
