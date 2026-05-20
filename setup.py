@@ -1,4 +1,3 @@
-from setuptools import find_packages
 from setuptools import setup
 
 version = "4.0.0.dev0"
@@ -23,7 +22,7 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: 6.2",
         "Intended Audience :: End Users/Desktop",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
@@ -41,9 +40,6 @@ setup(
     author_email="giorgio@giorgioborelli.it",
     url="http://www.giorgioborelli.it",
     license="GPL",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    namespace_packages=["collective", "collective.z3cform"],
     include_package_data=True,
     zip_safe=False,
     python_requires=">=3.10",
