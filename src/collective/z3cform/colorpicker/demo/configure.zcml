@@ -1,12 +1,14 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    i18n_domain="collective.z3cform.colorpicker">
+    i18n_domain="collective.z3cform.colorpicker"
+    >
 
-    <browser:page
-        name="colorpicker-demo"
-        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
-        class=".browser.Demo"
-        permission="zope.Public" />
+  <browser:page
+      name="colorpicker-demo"
+      for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+      class=".browser.Demo"
+      permission="zope.Public"
+      />
 
 </configure>
