@@ -1,32 +1,45 @@
 <div class="input-group">
-  <input type="color" name="" class="" title="" lang="" disabled=""
-       readonly="" alt="" tabindex="" accesskey="" size="" maxlength=""
-       tal:attributes="id string:${view/id};
-                       name view/name;
-                       class string:${view/klass} form-control;
-                       style view/style;
-                       title view/title;
-                       lang view/lang;
-                       onclick view/onclick;
-                       ondblclick view/ondblclick;
-                       onmousedown view/onmousedown;
-                       onmouseup view/onmouseup;
-                       onmouseover view/onmouseover;
-                       onmousemove view/onmousemove;
-                       onmouseout view/onmouseout;
-                       onkeypress view/onkeypress;
-                       onkeydown view/onkeydown;
-                       onkeyup view/onkeyup;
-                       value view/value;
-                       disabled view/disabled;
-                       tabindex view/tabindex;
-                       onfocus view/onfocus;
-                       onblur view/onblur;
-                       onchange view/onchange;
-                       readonly view/readonly;
-                       alt view/alt;
-                       accesskey view/accesskey;
-                       onselect view/onselect;
-                       size view/size;
-                       maxlength view/maxlength" />
+  <input class=""
+         accesskey=""
+         alt=""
+         disabled
+         lang=""
+         maxlength=""
+         name=""
+         readonly
+         size=""
+         tabindex=""
+         title=""
+         type="color"
+         tal:attributes="
+           id string:${view/id};
+           name view/name;
+           class string:${view/klass} form-control;
+           style view/style;
+           title view/title;
+           lang view/lang;
+           onclick view/onclick;
+           ondblclick view/ondblclick;
+           onmousedown view/onmousedown;
+           onmouseup view/onmouseup;
+           onmouseover view/onmouseover;
+           onmousemove view/onmousemove;
+           onmouseout view/onmouseout;
+           onkeypress view/onkeypress;
+           onkeydown view/onkeydown;
+           onkeyup view/onkeyup;
+           value view/value;
+           disabled view/disabled;
+           tabindex view/tabindex;
+           onfocus view/onfocus;
+           onblur view/onblur;
+           onchange view/onchange;
+           readonly view/readonly;
+           alt view/alt;
+           accesskey view/accesskey;
+           onselect view/onselect;
+           size view/size;
+           maxlength view/maxlength;
+         "
+  />
 </div>

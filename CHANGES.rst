@@ -1,11 +1,12 @@
 Changelog
 =========
 
-3.0.2 (unreleased)
-------------------
+.. You should *NOT* be adding new change log entries to this file.
+   You should create a file in the news directory instead.
+   For helpful instructions, please see:
+   https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
-- Nothing changed yet.
-
+.. towncrier release notes start
 
 3.0.1 (2023-10-26)
 ------------------
@@ -66,7 +67,7 @@ Changelog
 1.3 (2015-10-05)
 ----------------
 
-- Remove from jpicker js file the bad chars from the begining
+- Remove from jpicker js file the bad chars from the beginning
   [bloodbare]
 
 - Renamed txt files to rst, without symlinks.  Symlinks can give

@@ -1,15 +1,13 @@
-from plone.z3cform.layout import wrap_form
-from z3c.form import form, field, button
-from zope.interface import Interface
 from collective.z3cform.colorpicker import Color
+from plone.z3cform.layout import wrap_form
+from z3c.form import button
+from z3c.form import field
+from z3c.form import form
+from zope.interface import Interface
 
 
 class IColorForm(Interface):
-    color = Color(
-        title=u"Color",
-        description=u"",
-        required=False,
-        default=u"#6298c9")
+    color = Color(title="Color", description="", required=False, default="#6298c9")
 
 
 class ColorDemoForm(form.Form):
@@ -18,18 +16,17 @@ class ColorDemoForm(form.Form):
     fields = field.Fields(IColorForm)
     ignoreContext = True
 
-    label = u"Colopicker Demo"
-    description = (
-        u"Color picker widget using native color input support."
-    )
+    label = "Colopicker Demo"
+    description = "Color picker widget using native color input support."
 
     def __init__(self, context, request):
-        super(ColorDemoForm, self).__init__(context, request)
-        self.request.set('disable_border', True)
+        super().__init__(context, request)
+        self.request.set("disable_border", True)
 
-    @button.buttonAndHandler(u'Save')
+    @button.buttonAndHandler("Save")
     def handleApply(self, action):
         # data, errors = self.extractData()
         return
+
 
 Demo = wrap_form(ColorDemoForm)

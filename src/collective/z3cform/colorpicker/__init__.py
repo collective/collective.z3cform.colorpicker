@@ -1,2 +1,2 @@
-from .colorpicker import ColorpickerFieldWidget
-from .fields import Color
+from .colorpicker import ColorpickerFieldWidget  # noqa: F401
+from .fields import Color  # noqa: F401
