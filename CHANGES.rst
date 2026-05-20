@@ -66,7 +66,7 @@ Changelog
 1.3 (2015-10-05)
 ----------------
 
-- Remove from jpicker js file the bad chars from the begining
+- Remove from jpicker js file the bad chars from the beginning
   [bloodbare]
 
 - Renamed txt files to rst, without symlinks.  Symlinks can give
