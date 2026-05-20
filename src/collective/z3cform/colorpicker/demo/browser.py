@@ -6,10 +6,10 @@ from collective.z3cform.colorpicker import Color
 
 class IColorForm(Interface):
     color = Color(
-        title=u"Color",
-        description=u"",
+        title="Color",
+        description="",
         required=False,
-        default=u"#6298c9")
+        default="#6298c9")
 
 
 class ColorDemoForm(form.Form):
@@ -18,16 +18,16 @@ class ColorDemoForm(form.Form):
     fields = field.Fields(IColorForm)
     ignoreContext = True
 
-    label = u"Colopicker Demo"
+    label = "Colopicker Demo"
     description = (
-        u"Color picker widget using native color input support."
+        "Color picker widget using native color input support."
     )
 
     def __init__(self, context, request):
-        super(ColorDemoForm, self).__init__(context, request)
+        super().__init__(context, request)
         self.request.set('disable_border', True)
 
-    @button.buttonAndHandler(u'Save')
+    @button.buttonAndHandler('Save')
     def handleApply(self, action):
         # data, errors = self.extractData()
         return
