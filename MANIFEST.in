@@ -4,3 +4,4 @@ global-exclude *.pyc
 exclude *.png
 exclude *.sh
 exclude *.yml
+recursive-exclude news *
