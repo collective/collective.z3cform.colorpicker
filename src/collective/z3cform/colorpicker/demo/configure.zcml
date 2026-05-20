@@ -6,7 +6,7 @@
 
   <browser:page
       name="colorpicker-demo"
-      for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+      for="plone.base.interfaces.IPloneSiteRoot"
       class=".browser.Demo"
       permission="zope.Public"
       />

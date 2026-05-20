@@ -48,9 +48,13 @@ setup(
     zip_safe=False,
     python_requires=">=3.10",
     install_requires=[
-        "setuptools",
-        "Products.CMFCore",
         "plone.app.z3cform",
+        "plone.z3cform",
+        "Products.CMFCore",
+        "z3c.form",
+        "zope.component",
+        "zope.interface",
+        "zope.schema",
     ],
     entry_points="""
     # -*- Entry points: -*-
