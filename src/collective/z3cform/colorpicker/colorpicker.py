@@ -12,6 +12,7 @@ from zope.schema.interfaces import IField
 class IColorpickerWidget(IWidget):
     """Colorpicker widget."""
 
+
 @implementer_only(IColorpickerWidget)
 class ColorpickerWidget(TextWidget):
     maxlength = 7

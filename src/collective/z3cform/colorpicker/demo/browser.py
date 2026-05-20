@@ -7,11 +7,7 @@ from zope.interface import Interface
 
 
 class IColorForm(Interface):
-    color = Color(
-        title="Color",
-        description="",
-        required=False,
-        default="#6298c9")
+    color = Color(title="Color", description="", required=False, default="#6298c9")
 
 
 class ColorDemoForm(form.Form):
@@ -21,17 +17,16 @@ class ColorDemoForm(form.Form):
     ignoreContext = True
 
     label = "Colopicker Demo"
-    description = (
-        "Color picker widget using native color input support."
-    )
+    description = "Color picker widget using native color input support."
 
     def __init__(self, context, request):
         super().__init__(context, request)
-        self.request.set('disable_border', True)
+        self.request.set("disable_border", True)
 
-    @button.buttonAndHandler('Save')
+    @button.buttonAndHandler("Save")
     def handleApply(self, action):
         # data, errors = self.extractData()
         return
+
 
 Demo = wrap_form(ColorDemoForm)
