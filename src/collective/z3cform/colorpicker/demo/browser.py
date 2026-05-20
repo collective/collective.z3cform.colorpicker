@@ -1,7 +1,9 @@
-from plone.z3cform.layout import wrap_form
-from z3c.form import form, field, button
-from zope.interface import Interface
 from collective.z3cform.colorpicker import Color
+from plone.z3cform.layout import wrap_form
+from z3c.form import button
+from z3c.form import field
+from z3c.form import form
+from zope.interface import Interface
 
 
 class IColorForm(Interface):
